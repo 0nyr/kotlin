@@ -9,3 +9,7 @@
 ##### tools
 
 [SDKMAN! sdk manager](https://sdkman.io/)
+
+##### docs
+
+[gradle](https://gradle.org/)
