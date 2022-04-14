@@ -10,7 +10,19 @@
 
 `sdk install gradle 7.4.2`: install `gradle` for automatic recompiling and plugin management.
 
+### VSCode
+
+Install the following extensions
+
+`mathiasfrohlich.kot`
+
+`fwcd.kotlin`: The `launch.json` with `F5` command for building is broken.
+
 ## Commands
+
+> Use `ctrl+shift+B` to use directly the commands integrated as VSCode tasks.
+>
+> Add new tasks by editing `tasks.json` config file.
 
 ### Gradle
 

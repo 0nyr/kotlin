@@ -6,6 +6,11 @@ import org.springframework.boot.runApplication
 @SpringBootApplication
 class BlogApplicationKt
 
-fun main(args: Array<String>) {
-	runApplication<BlogApplicationKt>(*args)
+class MainKt {
+	companion object {
+		@JvmStatic
+		fun main(args: Array<String>) {
+			runApplication<BlogApplicationKt>(*args)
+		}
+	}
 }
