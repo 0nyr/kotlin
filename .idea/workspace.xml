@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a83873f-ce13-4888-ade7-f4bad0db9bac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/spring_boot_blog/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/projects/spring_boot_blog/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/spring_boot_blog/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/spring_boot_blog/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/spring_boot_blog/src/main/resources/templates/blog.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/projects/spring_boot_blog/src/main/resources/templates/blog.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/spring_boot_blog/src/main/kotlin/net/onyr/blog/Entities.kt" beforeDir="false" afterPath="$PROJECT_DIR$/projects/spring_boot_blog/src/main/kotlin/net/onyr/blog/Entities.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/spring_boot_blog/src/main/kotlin/net/onyr/blog/Extension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/projects/spring_boot_blog/src/main/kotlin/net/onyr/blog/Extension.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/spring_boot_blog/src/main/kotlin/net/onyr/blog/HtmlController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/projects/spring_boot_blog/src/main/kotlin/net/onyr/blog/HtmlController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/spring_boot_blog/src/test/kotlin/net/onyr/blog/BlogApplicationTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/spring_boot_blog/src/test/kotlin/net/onyr/blog/IntegrationTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/spring_boot_blog/src/test/kotlin/net/onyr/blog/RepositoriesTests.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,25 +38,53 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="27iH0h0cIVvrqIDrAWmDDiid3MO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/onyr/Documents/code/kotlin"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/onyr/Documents/code/kotlin&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;8957d0cbb6699fd2a4b672f6bd72a1c9&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="blog.main" />
@@ -69,10 +103,23 @@
       <option name="presentableId" value="Default" />
       <updated>1649795764427</updated>
       <workItem from="1649795765741" duration="715000" />
+      <workItem from="1649849065527" duration="789000" />
+      <workItem from="1649928915495" duration="5738000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

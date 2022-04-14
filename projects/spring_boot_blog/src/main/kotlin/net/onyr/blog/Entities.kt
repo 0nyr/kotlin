@@ -1,6 +1,10 @@
 package net.onyr.blog
 
-
+import java.time.LocalDateTime
+import javax.persistence.GeneratedValue
+import javax.persistence.Id
+import javax.persistence.ManyToOne
+import javax.persistence.Entity
 
 @Entity
 class Article(

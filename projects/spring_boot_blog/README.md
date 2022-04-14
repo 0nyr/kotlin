@@ -6,11 +6,9 @@
 
 [Video guide: Spring boot &amp; Kotlin](https://www.youtube.com/playlist?list=PL6gx4Cwl9DGDPsneZWaOFg0H2wsundyGr)
 
-
 ## Installation
 
 `sdk install gradle 7.4.2`: install `gradle` for automatic recompiling and plugin management.
-
 
 ## Commands
 
@@ -18,6 +16,11 @@
 
 `gradle tasks`: Get the list of available tasks for the current project. There is also the `gradle tasks --all` to get all possible tasks.
 
+`gradle bootRun`: Run LiveReload server.
+
+`gradle build`: Launch build and tests
+
+`gradle classes --build-cache --continuous`: Run a build daemon for quick automatic rebuild.
 
 ## Workflow
 
@@ -25,7 +28,5 @@
 
 1. In a first terminal, launch the **LiveReload** server with `gradle bootRun`. This runs a server for testing purpose.
 2. In another terminal, run `gradle build` to rebuild and update the classpath when necessary. This is because the automatic reload is only effective once the classes have been recompiled and modified. This commands runs build and tests and is quite slow. You also need to rerun it when needed. Use `gradle classes --build-cache --continuous` to accelerate the process, and make it automatic when a file is changed.
-
-
 
 ## TODO
