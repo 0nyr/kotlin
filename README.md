@@ -10,6 +10,10 @@
 
 [SDKMAN! sdk manager](https://sdkman.io/)
 
+##### online tools
+
+[Search code snippets | tabnine](https://www.tabnine.com/codeà)
+
 ##### docs
 
 [gradle](https://gradle.org/)

@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a83873f-ce13-4888-ade7-f4bad0db9bac" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/projects/spring_boot_blog/src/main/kotlin/net/onyr/blog/BlogApplicationKt.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/spring_boot_blog/src/main/kotlin/net/onyr/blog/Extension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/projects/spring_boot_blog/src/main/kotlin/net/onyr/blog/Extension.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +95,7 @@
       <updated>1649795764427</updated>
       <workItem from="1649795765741" duration="715000" />
       <workItem from="1649849065527" duration="789000" />
-      <workItem from="1649928915495" duration="6350000" />
+      <workItem from="1649928915495" duration="7506000" />
     </task>
     <servers />
   </component>
