@@ -1,0 +1,39 @@
+// See https://go.microsoft.com/fwlink/?LinkId=733558
+// for the documentation about the tasks.json format
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build with Gradle",
+            "type": "shell",
+            "command": "gradle build",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "LiveServer",
+            "type": "shell",
+            "command": "gradle bootRun",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "isBackground": true
+        },
+        {
+            "label": "Continuous rebuild",
+            "type": "shell",
+            "command": "gradle classes --build-cache --continuous",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "isBackground": true
+        }
+    ]
+}
