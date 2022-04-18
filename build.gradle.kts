@@ -1,27 +1,35 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import net.onyr.koans.*
 
 // Learn more about Gradle by exploring our samples 
 // at https://docs.gradle.org/7.4.2/samples
 
 plugins {
+    
     kotlin("jvm") version "1.6.20"
 }
 
-repositories {
-    mavenCentral()
-    
+allprojects {
+    group = "net.onyr"
+    version = "1.0.0-SNAPSHOT"
+
+    repositories {
+        mavenCentral()
+    }
 }
 
-dependencies {
-    compile(kotlin("stdlib-jdk11"))
-}
+subprojects {
+    apply {
+        plugin("org.jetbrains.kotlin.jvm")  
+    }
 
-// list tasks here
-task<IntroTask>("koans-intro")
+    dependencies {
+        implementation(kotlin("stdlib-jdk11"))
+    }
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions {
-        jvmTarget = "11"
+    tasks.withType<KotlinCompile> {
+        kotlinOptions {
+            jvmTarget = "11"
+            freeCompilerArgs = listOf("-Xjsr305=strict")
+        }
     }
 }

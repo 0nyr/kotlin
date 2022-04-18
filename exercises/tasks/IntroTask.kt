@@ -1,4 +1,7 @@
-package net.onyr.koans
+package net.onyr.tasks
+
+import org.gradle.api.DefaultTask
+import org.gradle.api.tasks.TaskAction
 
 import org.jetbrains.kotlin.text.Regex
 
@@ -34,7 +37,7 @@ val tripleQuotedString = """
 val month = "(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"
 fun getPattern(): String = """\d{2}\s${month}\s\d{4}"""
 
-
+@
 open class IntroTask : DefaultTask() {
 
     init {
@@ -42,23 +45,25 @@ open class IntroTask : DefaultTask() {
         description = "Kotlin Koans Introduction"
     }
 
-fun fun main(args: Array<String>) {
-    println("Task1 running") 
-    
-    println(start())
+    @TaskAction
+    fun run() {
+        println("Task1 running") 
+        
+        println(start())
 
-    // remove leading whitespace from raw strings
-    // By default, | is used as margin prefix
-    val text = """
-    |Tell me and I forget.
-    |Teach me and I remember.
-    |Involve me and I learn.
-    |(Benjamin Franklin)
-    """.trimMargin()
-    println(text)
+        // remove leading whitespace from raw strings
+        // By default, | is used as margin prefix
+        val text = """
+        |Tell me and I forget.
+        |Teach me and I remember.
+        |Involve me and I learn.
+        |(Benjamin Franklin)
+        """.trimMargin()
+        println(text)
 
-    println(tripleQuotedString)
+        println(tripleQuotedString)
 
-    val regex = Regex(getPattern())
-    assertTrue(regex.containsMatchIn("12 JAN 1990"))
+        val regex = Regex(getPattern())
+        assertTrue(regex.containsMatchIn("12 JAN 1990"))
+    }
 }
