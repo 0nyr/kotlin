@@ -26,6 +26,8 @@ Install the following extensions
 
 ### Gradle
 
+`gradle init`: Init a new **Gradle** project.
+
 `gradle tasks`: Get the list of available tasks for the current project. There is also the `gradle tasks --all` to get all possible tasks.
 
 `gradle bootRun`: Run LiveReload server.

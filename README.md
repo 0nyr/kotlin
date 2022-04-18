@@ -17,3 +17,7 @@
 ##### docs
 
 [gradle](https://gradle.org/)
+
+##### gradle
+
+[executing Kotlin Scripts with gradle](https://kotlinexpertise.com/execute-kotlin-scripts-with-gradle/)
