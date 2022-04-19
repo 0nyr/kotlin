@@ -1,15 +1,15 @@
 package net.onyr.koans
 
-import org.jetbrains.kotlin.text.Regex
+import org.junit.Assert.assertTrue
 
 // Hello World
-fun start(): String = "OK";
+fun start(): String = "OK"
 
 // Names arguments
 fun joinOptions(options: Collection<String>) =
     options.joinToString(
         prefix = "[", postfix = "]"
-    );
+    )
 
 // Default arguments
 fun foo(name: String, number: Int = 42, toUpperCase: Boolean = false) =
@@ -31,34 +31,29 @@ val tripleQuotedString = """
     #answer = $answer""".trimMargin("#")
 
 // String template (regex)
-val month = "(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"
+var month = "(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"
 fun getPattern(): String = """\d{2}\s${month}\s\d{4}"""
 
+object IntroKoan {
+    fun run() {
+        println()
+        println("########## Introduction ##########")
 
-open class IntroTask : DefaultTask() {
+        println(start())
 
-    init {
-        group = "koans"
-        description = "Kotlin Koans Introduction"
+        // remove leading whitespace from raw strings
+        // By default, | is used as margin prefix
+        val text = """
+        |Tell me and I forget.
+        |Teach me and I remember.
+        |Involve me and I learn.
+        |(Benjamin Franklin)
+        """.trimMargin()
+        println(text)
+
+        println(tripleQuotedString)
+
+        val regex = Regex(getPattern())
+        assertTrue(regex.containsMatchIn("12 JAN 1990"))
     }
-
-fun fun main(args: Array<String>) {
-    println("Task1 running") 
-    
-    println(start())
-
-    // remove leading whitespace from raw strings
-    // By default, | is used as margin prefix
-    val text = """
-    |Tell me and I forget.
-    |Teach me and I remember.
-    |Involve me and I learn.
-    |(Benjamin Franklin)
-    """.trimMargin()
-    println(text)
-
-    println(tripleQuotedString)
-
-    val regex = Regex(getPattern())
-    assertTrue(regex.containsMatchIn("12 JAN 1990"))
 }

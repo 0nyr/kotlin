@@ -11,6 +11,7 @@ import net.onyr.tasks.*
 
 plugins {
     kotlin("jvm") version "1.6.20"
+    application
 }
 
 allprojects {
@@ -32,7 +33,7 @@ subprojects {
     }
 
     dependencies {
-        implementation(kotlin("stdlib-jdk11"))
+        implementation(kotlin("stdlib-jdk8"))
     }
 
     tasks.withType<KotlinCompile> {
@@ -51,3 +52,4 @@ buildscript {
 
 // custom tasks, available from buildSrc
 tasks.register<CustomTask>("customTask")
+
