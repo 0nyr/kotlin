@@ -7,7 +7,7 @@ import java.lang.IllegalArgumentException
 fun start(): String = "OK"
 
 // Names arguments
-fun joinOptions(options: Collection<String>) =
+fun joinOptions(options: Collection<String>): String =
     options.joinToString(
         prefix = "[", postfix = "]"
     )
@@ -73,12 +73,18 @@ fun containsEven(collection: Collection<Int>): Boolean =
         (predicate in collection) && predicate % 2 == 0
     }
 
-object IntroKoan {
-    fun run() {
-        println()
-        println("########## Introduction ##########")
+object IntroKoan : Koan("Introduction") {
+    override fun run() {
+        super.run() // call original run method
 
         println(start())
+
+        val strings: Collection<String> = listOf(
+            "Once", "Even", "Never", "Always", "Eventually"
+        )
+        println(joinOptions(strings))
+
+        useFoo()
 
         // remove leading whitespace from raw strings
         // By default, | is used as margin prefix
@@ -100,7 +106,7 @@ object IntroKoan {
 
         checkAge(10)
 
-        var collection: Collection<Int> = listOf(1, 2, 3, 5, 11)
+        val collection: Collection<Int> = listOf(1, 2, 3, 5, 11)
         println("Does collection contains an even number ?: ${containsEven(collection)}")
     }
 }

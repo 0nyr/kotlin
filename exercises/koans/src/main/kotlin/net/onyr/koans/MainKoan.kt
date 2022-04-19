@@ -5,4 +5,5 @@ fun main(args: Array<String>) {
     println("Running Koans...")
 
     IntroKoan.run() // singleton
+    ClassesKoan.run()
 }
