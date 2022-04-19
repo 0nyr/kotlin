@@ -22,13 +22,17 @@ allprojects {
     }
 }
 
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(11))
+}
+
 subprojects {
     apply {
         plugin("org.jetbrains.kotlin.jvm")  
     }
 
     dependencies {
-        implementation(kotlin("stdlib-jdk8"))
+        implementation(kotlin("stdlib-jdk11"))
     }
 
     tasks.withType<KotlinCompile> {
@@ -45,4 +49,5 @@ buildscript {
     }
 }
 
-//tasks.register<CustomTask>("customTask")
+// custom tasks, available from buildSrc
+tasks.register<CustomTask>("customTask")

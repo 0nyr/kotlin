@@ -48,4 +48,4 @@
 
 * [ ] Continue [Koans](https://play.kotlinlang.org/koans/Introduction/String%20templates/Task.kt)
 * [ ] Fix Composite Build for automatic modular script execution using gradle
-* [ ] Complete tasks for building subprojects.
+* [x] Complete tasks for building subprojects.

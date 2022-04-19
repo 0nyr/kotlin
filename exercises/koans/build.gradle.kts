@@ -1,17 +1,18 @@
 
 
 // $ gradle koans:tasks intro
-// run on build
-task("intro") {             
-    description = "Some meaningful words"
+// always run on task execution
+/*task("intro") {
+    description = "Default running task"
 
-    println("Intro Intro Intro... This is an Intro task.")
-}
+    println(".")
+}*/
 
 // make task available (see with $ gradle tasks --all)
+//  gradle -q koans:example-task
 tasks.register("example-task") {
     description = "Example task"
 
-    println("Example task")
+    println("Example task, registered inside :koans")
 }
 
