@@ -32,6 +32,15 @@
 
 [Kotlin multiproject boilerplate | GitHub](https://github.com/hyeyoom/kotlin-multi-project-boilerplate)
 
+## Commands
+
+### Gradle
+
+##### init
+
+`gradle init --type=basic --dsl=kotlin`: init new **gradle** project.
+
+
 
 ## TODO
 
