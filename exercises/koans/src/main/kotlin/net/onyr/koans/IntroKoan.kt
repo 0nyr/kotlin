@@ -1,6 +1,7 @@
 package net.onyr.koans
 
 import org.junit.Assert.assertTrue
+import java.lang.IllegalArgumentException
 
 // Hello World
 fun start(): String = "OK"
@@ -34,6 +35,44 @@ val tripleQuotedString = """
 var month = "(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)"
 fun getPattern(): String = """\d{2}\s${month}\s\d{4}"""
 
+// Nullable types
+fun sendMessageToClient(
+    client: Client?, message: String?, mailer: Mailer
+) {
+    val email: String? = client?.personalInfo?.email
+    if (email == null || message == null ) return
+    mailer.sendMessage(email, message)
+}
+
+class Client(val personalInfo: PersonalInfo?)
+class PersonalInfo(val email: String?)
+interface Mailer {
+    fun sendMessage(email: String, message: String)
+}
+class MailSender : Mailer {
+    override fun sendMessage(email: String, message: String) {
+        println("Sender: $email, Message: $message")
+    }
+}
+
+// Nothing type
+fun failWithWrongAge(age: Int?): Nothing {
+    throw IllegalArgumentException("Wrong age: $age")
+}
+
+fun checkAge(age: Int?) {
+    if (age == null || age !in 0..150) failWithWrongAge(age)
+    println("Congrats! Next year you'll be ${age + 1}.")
+}
+
+// lambda expressions
+fun containsEven(collection: Collection<Int>): Boolean =
+    collection.any {
+        // lambda (last expression considered as return)
+            predicate: Int ->
+        (predicate in collection) && predicate % 2 == 0
+    }
+
 object IntroKoan {
     fun run() {
         println()
@@ -55,5 +94,13 @@ object IntroKoan {
 
         val regex = Regex(getPattern())
         assertTrue(regex.containsMatchIn("12 JAN 1990"))
+
+        val client = Client(PersonalInfo("client@mail.com"))
+        sendMessageToClient(client, "this is a message", MailSender())
+
+        checkAge(10)
+
+        var collection: Collection<Int> = listOf(1, 2, 3, 5, 11)
+        println("Does collection contains an even number ?: ${containsEven(collection)}")
     }
 }

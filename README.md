@@ -46,6 +46,9 @@
 
 ### Mon 19th April 2022
 
-* [ ] Continue [Koans](https://play.kotlinlang.org/koans/Introduction/String%20templates/Task.kt)
-* [ ] Fix Composite Build for automatic modular script execution using gradle
+* [x] Fix Composite Build for automatic modular script execution using gradle
 * [x] Complete tasks for building subprojects.
+
+### Tue 20th April 2022
+
+* [ ] Continue [Koans](https://play.kotlinlang.org/koans/Introduction/String%20templates/Task.kt)
