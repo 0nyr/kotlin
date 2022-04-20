@@ -40,7 +40,9 @@
 
 `gradle init --type=basic --dsl=kotlin`: init new **gradle** project.
 
+##### run
 
+`gradle :koans:run --warning-mode all --build-cache --configuration-cache --parallel`: Run the :koans project. The different flags are here to optimise compile speed and display warnings.
 
 ## TODO
 
