@@ -4,6 +4,12 @@ package net.onyr.koans
 fun main(args: Array<String>) {
     println("Running Koans...")
 
-    IntroKoan.run() // singleton
+    // singletons
+    IntroKoan.run()
     ClassesKoan.run()
+    ConventionsKoan.run()
+    CollectionsKoan.run()
+    PropertiesKoan.run()
+    BuildersKoan.run()
+    GenericsKoan.run()
 }
